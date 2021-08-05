@@ -17,7 +17,10 @@ public class JavaPractice {
      */
     public static void main(String[] args) {
         
+        scholarshipAcceptance();
+        dayConverter();
         score();
+        pi();
         
         Scanner scanner = new Scanner(System.in);
         
@@ -49,5 +52,41 @@ public class JavaPractice {
         System.out.println("Round 1 results:");
         System.out.println(++scoreTom);
         System.out.println(--scoreBob);
+    }
+    public static void pi(){
+        Scanner scanner = new Scanner(System.in);
+        
+        //input of the value
+        double pi = 3.14;
+        double piInput = scanner.nextInt();
+        
+        //calculate the perimeter of a circle
+        double piTotal = 2 * pi * piInput;
+        
+        //output of the perimeter of a circle
+        System.out.println(piTotal);
+    }
+    public static void dayConverter(){
+        Scanner scanner = new Scanner(System.in);
+        
+        int days = scanner.nextInt();
+        
+        int seconds = 60 * 60 * 24 * days;
+        
+        System.out.println(seconds);
+    }
+    public static void scholarshipAcceptance(){
+        Scanner scanner = new Scanner(System.in);
+        
+        double gradeAverage = scanner.nextDouble();
+        
+        if (gradeAverage > 3.5)
+        {
+           System.out.println("Congratulations");
+        }
+        else
+        {
+            System.out.println("Sorry");
+        }
     }
 }
