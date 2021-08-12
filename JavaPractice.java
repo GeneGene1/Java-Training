@@ -69,17 +69,23 @@ public class JavaPractice {
     public static void dayConverter(){
         Scanner scanner = new Scanner(System.in);
         
+        //input the days
         int days = scanner.nextInt();
         
+        
+        //calculate the days into seconds
         int seconds = 60 * 60 * 24 * days;
         
+        //output the seconds in the days
         System.out.println(seconds);
     }
     public static void scholarshipAcceptance(){
         Scanner scanner = new Scanner(System.in);
         
+        //input grade point average
         double gradeAverage = scanner.nextDouble();
         
+        //+
         if (gradeAverage > 3.5)
         {
            System.out.println("Congratulations");
